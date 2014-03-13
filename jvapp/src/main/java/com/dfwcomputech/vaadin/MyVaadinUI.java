@@ -8,7 +8,7 @@ import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.UI;
 /*
- * @autor mcumbay 
+ * @autor mcumbay  
  * 
  */
 @Theme("bookatme")
