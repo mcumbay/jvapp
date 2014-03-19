@@ -9,4 +9,28 @@
   @include reindeer;
 
   /* Insert your theme rules here */
+  #main{
+  	max-width:960px;
+  	margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #myheader{
+  	background-color:#1881BB;
+  	color:white;
+  
+  }
+  
+  #mybody{  	
+ 	border-style:solid;
+	border-width:1px;
+	min-height:480px;
+  }
+  
+  #myfooter{  	 
+  	 height:60px;
+  	 color:white;
+  	 background-color: #001349;
+  	 text-align:center;
+  }
 }
