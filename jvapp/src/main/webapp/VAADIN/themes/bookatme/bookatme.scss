@@ -1,0 +1,41 @@
+/* Import the reindeer theme. */
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../reindeer/reindeer.scss";
+
+/* This contains all of your theme. */
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin bookatme {
+  /* Include all the styles from the reindeer theme */
+  @include reindeer;
+
+  /* Insert your theme rules here */
+  #main{
+  	max-width:960px;
+  	margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #myheader{
+  	background-color:#1881BB;
+  	color:white;
+  
+  }
+  
+  #mybody{  	
+ 	border-style:solid;
+	border-width:1px;
+	min-height:480px;
+  }
+  
+  #myfooter{  	 
+  	 height:60px;
+  	 color:white;
+  	 background-color: #001349;
+  	 text-align:center;
+  }
+  
+  .horizontal_menu .v-menubar { 
+  	 background-color: white; 
+  }
+  
+}

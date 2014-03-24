@@ -1,2 +1,0 @@
-# Module com.dfwcomputech.vaadin.AppWidgetSet
-# RPC service class, partial path of RPC policy file

@@ -58,6 +58,9 @@
     <dependent-module archiveName="vaadin-themes-7.1.10.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/vaadin/vaadin-themes/7.1.10/vaadin-themes-7.1.10.jar">
       <dependency-type>uses</dependency-type>
     </dependent-module>
+    <dependent-module archiveName="responsive-1.0.0.alpha4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/com/vaadin/addon/responsive/responsive/1.0.0.alpha4/responsive-1.0.0.alpha4.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
     <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
   </wb-module>
 </project-modules>
