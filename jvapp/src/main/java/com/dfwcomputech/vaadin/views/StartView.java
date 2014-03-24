@@ -1,11 +1,10 @@
 package com.dfwcomputech.vaadin.views;
 
-import com.dfwcomputech.vaadin.components.NavigatorButton;
+import com.dfwcomputech.vaadin.components.TagLineBox;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.server.ThemeResource;
-import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Image;
 import com.vaadin.ui.VerticalLayout;
 
@@ -13,15 +12,15 @@ import com.vaadin.ui.VerticalLayout;
 public class StartView  extends VerticalLayout implements View{
 	public static final String FRAGMENTID = "";
 		
-	private Image banner = new Image(null,new ThemeResource("img/slider01.png"));
-	private NavigatorButton button; 
+	private Image banner = new Image(null,new ThemeResource("img/slider01.png"));	
+	private TagLineBox tagline;
 	
 	public StartView(final Navigator navigator ) {
-		setBanner();
-		setButton(navigator);
-		addComponent(banner);
-		addComponent(button);
-		setComponentAlignment(button, Alignment.MIDDLE_CENTER);
+		setBanner();		
+		setTagLine(navigator);
+		addComponent(banner);		
+		addComponent(tagline);
+		
 	}
 	
 	@Override
@@ -31,10 +30,12 @@ public class StartView  extends VerticalLayout implements View{
 	
 	public void setBanner(){								
 		banner.setWidth("100%");		
-	}
+	}	
 	
-	public void setButton(final Navigator navigator){
-		button = new NavigatorButton("CREATE", MainView.FRAGMENTID, navigator);
+	public void setTagLine(Navigator navigator){
+		tagline = new TagLineBox("Set an appointment Now!!!",MainView.FRAGMENTID,navigator);
+		tagline.setButtonCaption("CREATE");
+		tagline.setWidth("100%");
 	}
 	
 }

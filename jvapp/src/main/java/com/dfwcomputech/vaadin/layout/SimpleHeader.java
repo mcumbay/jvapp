@@ -26,6 +26,7 @@ public class SimpleHeader extends CustomComponent{
 	
 	private List<MenuBar.MenuItem> setMenu() {
 		menu = new MenuBar();
+		menu.addStyleName("horizontal_menu");
 		List<MenuBar.MenuItem> rootMenuList= new ArrayList<MenuBar.MenuItem>();
 		rootMenuList.add(menu.addItem("Home", null));
 		rootMenuList.add(menu.addItem("About Us", null));

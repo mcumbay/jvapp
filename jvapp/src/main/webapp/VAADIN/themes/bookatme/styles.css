@@ -7043,3 +7043,7 @@ body .bookatme.v-app .v-app-loading {
 	background-color: #001349;
 	text-align: center;
 }
+
+.bookatme .horizontal_menu .v-menubar {
+	background-color: white;
+}

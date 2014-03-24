@@ -1,4 +1,4 @@
-package com.dfwcomputech.vaadin;
+package com.dfwcomputech.vaadin.ui;
 
 import com.dfwcomputech.vaadin.layout.simple.SimpleLayout;
 import com.dfwcomputech.vaadin.views.MainView;
@@ -13,7 +13,7 @@ import com.vaadin.ui.UI;
  **/
 @Theme("bookatme")
 @SuppressWarnings("serial")
-public class MyVaadinUI extends UI {
+public class MainUI extends UI {
 	private SimpleLayout mainLayout= new SimpleLayout();	
 	@Override
 	protected void init(VaadinRequest request) {
